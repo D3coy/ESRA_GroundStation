@@ -1,0 +1,4 @@
+run radio communication and http server, report info/debug/fatal logs
+
+gorm sqlite <-> communication <-> /dev/ttyUSB#
+gorm sqlite <-> http server / UI
