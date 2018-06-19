@@ -6,10 +6,18 @@
 </head>
 
 <body>
-    <div>
-        <h1>{{.PageTitle}}</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-4" style="text-align: center">
+                <img src="/static/png/Clark_Aerospace_Logo.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="3dPlot" style="margin: 0 auto; height: 600px; width: 600px"></div>
+            </div>
+        </div>
     </div>
-    <div id="container" style="height: 800px"></div>
 
     <!-- Imports -->
     <script src="/static/js/jquery.min.js"></script>
@@ -36,7 +44,7 @@
         // Set up the chart
         var chart = new Highcharts.Chart({
             chart: {
-                renderTo: 'container',
+                renderTo: '3dPlot',
                 margin: 100,
                 type: 'scatter3d',
                 animation: false,
